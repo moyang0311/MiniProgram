@@ -1,0 +1,61 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "项目"
+			}
+		}
+	    
+        ,{
+            "path" : "pages/shopping/shopping",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/user",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"backgroundColor": "#fff",
+		"color": "#707070",
+		"selectedColor": "#1296db",
+		"list": [
+			{
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home_selected.png",
+				"text": "项目",
+				"pagePath": "pages/index/index"
+			},
+			{
+				"iconPath": "static/icon/shopping-cart.png",
+				"selectedIconPath": "static/icon/shopping-cart_selected.png",
+				"text": "购物车",
+				"pagePath": "pages/shopping/shopping"
+			},
+			{
+				"iconPath": "static/icon/user.png",
+				"selectedIconPath": "static/icon/user_selected.png",
+				"text": "个人中心",
+				"pagePath": "pages/user/user"
+			}
+		]
+	}
+}
