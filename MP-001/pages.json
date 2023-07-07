@@ -41,7 +41,7 @@
 			{
 				"iconPath": "static/icon/home.png",
 				"selectedIconPath": "static/icon/home_selected.png",
-				"text": "项目",
+				"text": "主页",
 				"pagePath": "pages/index/index"
 			},
 			{
