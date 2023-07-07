@@ -2,7 +2,7 @@
 	<view>
 		<view class="search">
 			<input type="text" placeholder="手机">
-			<!-- 测试提交 -->
+			<!-- 测试提交 111111 -->
 		</view>
 	</view>
 </template>
