@@ -1,7 +1,8 @@
 <template>
 	<view>
 		<view class="search">
-			<input type="text" placeholder="手机111">
+			<input type="text" placeholder="手机">
+			<!-- 测试提交 -->
 		</view>
 	</view>
 </template>
