@@ -20,7 +20,7 @@
             "path" : "pages/user/user",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "用户中心",
                 "enablePullDownRefresh": false
             }
             
@@ -33,16 +33,19 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"uniIdRouter": {},
+	//配置bottom栏
 	"tabBar": {
+		//使用json的格式去配置样式
 		"backgroundColor": "#fff",
 		"color": "#707070",
 		"selectedColor": "#1296db",
+		//分页列表（分页列表至少得两个以上）
 		"list": [
 			{
-				"iconPath": "static/icon/home.png",
-				"selectedIconPath": "static/icon/home_selected.png",
-				"text": "主页",
-				"pagePath": "pages/index/index"
+				"iconPath": "static/icon/home.png",//按钮图标（静态）
+				"selectedIconPath": "static/icon/home_selected.png",//按钮图标（被选择）
+				"text": "项目",//按钮文本
+				"pagePath": "pages/index/index"//分页路径
 			},
 			{
 				"iconPath": "static/icon/shopping-cart.png",

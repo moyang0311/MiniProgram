@@ -149,12 +149,131 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   data: function data() {
-    return {};
+    return {
+      bunner: [{
+        bmg: "../../static/icon/index-bunner/001.jpg"
+      }, {
+        bmg: "../../static/icon/index-bunner/002.jpg"
+      }, {
+        bmg: "../../static/icon/index-bunner/003.jpg"
+      }, {
+        bmg: "../../static/icon/index-bunner/004.jpg"
+      }, {
+        bmg: "../../static/icon/index-bunner/005.jpg"
+      }],
+      nav: [{
+        icon: "../../static/icon/index-nav/clothes.png",
+        msg: "衣服"
+      }, {
+        icon: "../../static/icon/index-nav/computer.png",
+        msg: "电脑"
+      }, {
+        icon: "../../static/icon/index-nav/phone.png",
+        msg: "手机"
+      }, {
+        icon: "../../static/icon/index-nav/pen.png",
+        msg: "文具"
+      }, {
+        icon: "../../static/icon/index-nav/supermarket.png",
+        msg: "超市"
+      }, {
+        icon: "../../static/icon/index-nav/bed.png",
+        msg: "家居"
+      }, {
+        icon: "../../static/icon/index-nav/baby.png",
+        msg: "母婴"
+      }, {
+        icon: "../../static/icon/index-nav/game.png",
+        msg: "游戏"
+      }, {
+        icon: "../../static/icon/index-nav/sport.png",
+        msg: "运动"
+      }, {
+        icon: "../../static/icon/index-nav/goodthing.png",
+        msg: "好物"
+      }],
+      things: [{
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }, {
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }, {
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }, {
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }, {
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }, {
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }, {
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }, {
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }, {
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }, {
+        img: '../../static/icon/index-list/computer.jpg',
+        name: '电脑',
+        price: "￥3000"
+      }],
+      active: true
+    };
   },
-  onLoad: function onLoad() {},
-  methods: {}
+  methods: {
+    change: function change(e) {
+      this.current = e.detail.current;
+    }
+  }
 };
 exports.default = _default;
 
