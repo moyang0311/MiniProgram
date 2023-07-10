@@ -74,9 +74,11 @@
 </script>
 
 <style>
-	ul{
+	*{
 		margin: 0;
 		padding: 0;
+	}
+	ul{
 		width: 100%;
 		height: auto;
 		list-style-type: none;
@@ -87,7 +89,7 @@
 	}
 	ul li{
 		width: 660rpx;
-		height: 344rpx;
+		height: 340rpx;
 		background-color: #fff;
 		border: 1rpx solid #bbb;
 		border-radius: 40rpx;
@@ -115,5 +117,4 @@
 	.count{
 		margin-left: 40rpx;
 	}
-	
 </style>
