@@ -2,7 +2,6 @@
 	<view class="userbox">
 		<view class="headshots">
 			<img src="../../static/icon/headshots.png">
-			<image src="../../static/icon/headshots.png"></image>
 			<p>
 				username
 			</p>
