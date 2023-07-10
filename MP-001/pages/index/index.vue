@@ -1,8 +1,9 @@
 <template>
 	<view>
-		<view class="search">
-			<input type="text" placeholder="手机">
-			<!-- 测试提交 111111 -->
+		<view class="text">
+			<navigator url="/pages/commodity-details/commodity-details">
+				<button>跳转</button>
+			</navigator>
 		</view>
 	</view>
 </template>
@@ -14,7 +15,7 @@
 			}
 		},
 		onLoad() {
-
+			
 		},
 		methods: {
 

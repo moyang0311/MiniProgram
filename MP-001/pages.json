@@ -20,6 +20,15 @@
             "path" : "pages/user/user",
             "style" :                                                                                    
             {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/commodity-details/commodity-details",
+            "style" :                                                                                    
+            {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
