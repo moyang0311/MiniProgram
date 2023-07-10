@@ -1,5 +1,6 @@
 <template>
-	<view>
+	<view class="content">
+		<text class="totality">全部 0</text>
 		<ul>
 			<li v-for="(shopData, index) in arrData">
 				<!-- 购物车盒子 -->
@@ -31,8 +32,20 @@
 			</li>
 			
 		</ul>
-		
+		<view class="footer">
+			<label class="radio">
+				<radio value="all" /><text>全选</text>
+			</label>
+			<view class="total_price">
+				<text>合计:</text>
+				<text>￥0.00</text>
+			</view>
+			<view class="pay">
+				<text>去结算</text>
+			</view>
+		</view>
 	</view>
+	
 </template>
 
 <script>
@@ -79,6 +92,21 @@
 		margin: 0;
 		padding: 0;
 	}
+	page{
+		background-color: #d6d6d6;
+	}
+	.content{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.totality{
+		color: #75F9FD;
+		font-size: 36rpx;
+	}
 	ul{
 		width: 100%;
 		height: auto;
@@ -106,7 +134,12 @@
 	.img{
 		width: 212rpx;
 		height: 212rpx;
-		background-color: #000;
+		/* background-color: #000; */
+	}
+	.img img{
+		width: 100%;
+		height: 100%;
+		border-radius: 40rpx;
 	}
 	.deteli{
 		width: 100%;
@@ -117,5 +150,29 @@
 	}
 	.count{
 		margin-left: 40rpx;
+	}
+	.footer{
+		width: 100%;
+		height: 112rpx;
+		background-color: #fff;
+		border: 1rpx solid #bbb;
+		position: sticky;
+		bottom: 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;	
+	}
+	.total_price{
+		font-size: 36rpx;
+	}
+	.pay{
+		width: 162rpx;
+		height: 66rpx;
+		border: 1px solid #bbb;
+		background-color: #75F9FD;
+		border-radius: 33rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 </style>
