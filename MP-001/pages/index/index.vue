@@ -28,10 +28,12 @@
 			</ul>
 			<ul class="list">
 				<li v-for="(item,index) in things":key="index">
-					<img style="width: 160rpx;height: 160rpx;" :src="item.img">
+					
+					<navigator url="/pages/commodity-details/commodity-details">
+						<img style="width: 160rpx;height: 160rpx;" :src="item.img">
 					<text>{{item.name}}</text>
 					<text>{{item.price}}</text>
-					<navigator url="../deteli/deteli.vue">跳转</navigator>
+					</navigator>
 				</li>
 			</ul>
 		</view>
@@ -135,7 +137,6 @@
 						price:"￥3000"
 					}
 				],
-				active:true
 			}
 		},
 		methods: {
@@ -147,8 +148,15 @@
 </script>
 
 <style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
 	page{
 		background-color: #75F9FD;
+	}
+	ul li {
+		list-style: none;
 	}
 	.top{
 		width: 100%;
@@ -165,7 +173,7 @@
 		border: 1px solid #bbb;
 		border-radius: 44rpx;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 	}
 	.search input{
@@ -234,7 +242,7 @@
 		align-content: space-around;
 		justify-content: space-around;
 	}
-	.list li{
+	.list li navigator{
 		width: 258rpx;
 		height: 272rpx;
 		border: 1rpx solid #bbb;
