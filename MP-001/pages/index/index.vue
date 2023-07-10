@@ -8,102 +8,31 @@
 		</view>
 		<view class="content">
 			<view class="bunner">
-				
+				<uni-swiper-dot :info="info" :current="current" field="content" :mode="mode">
+					<swiper class="swiper-box" @change="change">
+						<swiper-item v-for="(item ,index) in bunner" :key="index">
+							<view class="swiper-item">
+								<img class="bmg" :src="item.bmg" alt="">
+							</view>
+						</swiper-item>
+					</swiper>
+				</uni-swiper-dot>
+
 			</view>
-				<ul class="nav">
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/clothes.png">
-						<text>衣服</text>
-					</li>
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/computer.png">
-						<text>电脑</text>
-					</li>
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/phone.png">
-						<text>手机</text>
-					</li>
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/pen.png">
-						<text>文具</text>
-					</li>
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/supermarket.png">
-						<text>超市</text>
-					</li>
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/bed.png">
-						<text>家居</text>
-					</li>
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/baby.png">
-						<text>母婴</text>
-					</li>
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/game.png">
-						<text>游戏</text>
-					</li>
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/sport.png">
-						<text>运动</text>
-					</li>
-					<li>
-						<img style="width: 48rpx;height: 48rpx;" src="../../static/icon/index-nav/goodthing.png">
-						<text>好物</text>
-					</li>
-				</ul>
-				<ul class="list">
-					<li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li>
-					<li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li><li>
-						<img style="width: 160rpx;height: 160rpx;" src="../../static/icon/index-list/computer.jpg" alt="">
-						<text>笔记本电脑</text>
-						<text>￥3000</text>
-					</li>
-				</ul>
+			<ul class="nav">
+				<li v-for="(item,index) in nav" :key="index">
+					<img style="width: 48rpx;height: 48rpx;" :src="item.icon">
+					<text>{{item.msg}}</text>
+				</li>
+			</ul>
+			<ul class="list">
+				<li v-for="(item,index) in things":key="index">
+					<img style="width: 160rpx;height: 160rpx;" :src="item.img">
+					<text>{{item.name}}</text>
+					<text>{{item.price}}</text>
+					<navigator url="../deteli/deteli.vue">跳转</navigator>
+				</li>
+			</ul>
 		</view>
 	</view>
 </template>
@@ -112,13 +41,106 @@
 	export default {
 		data() {
 			return {
+				bunner:[
+					{
+						bmg:"../../static/icon/index-bunner/001.jpg"
+					},
+					{
+						bmg:"../../static/icon/index-bunner/002.jpg"
+					},
+					{
+						bmg:"../../static/icon/index-bunner/003.jpg"
+					},
+					{
+						bmg:"../../static/icon/index-bunner/004.jpg"
+					},
+					{
+						bmg:"../../static/icon/index-bunner/005.jpg"
+					},
+				],
+				nav:[
+					{
+						icon:"../../static/icon/index-nav/clothes.png",
+						msg:"衣服"
+					},{
+						icon:"../../static/icon/index-nav/computer.png",
+						msg:"电脑"
+					},{
+						icon:"../../static/icon/index-nav/phone.png",
+						msg:"手机"
+					},{
+						icon:"../../static/icon/index-nav/pen.png",
+						msg:"文具"
+					},{
+						icon:"../../static/icon/index-nav/supermarket.png",
+						msg:"超市"
+					},{
+						icon:"../../static/icon/index-nav/bed.png",
+						msg:"家居"
+					},{
+						icon:"../../static/icon/index-nav/baby.png",
+						msg:"母婴"
+					},{
+						icon:"../../static/icon/index-nav/game.png",
+						msg:"游戏"
+					},{
+						icon:"../../static/icon/index-nav/sport.png",
+						msg:"运动"
+					},{
+						icon:"../../static/icon/index-nav/goodthing.png",
+						msg:"好物"
+					},
+				],
+				things:[
+					{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					},{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					},{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					},{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					},{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					},{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					},{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					},{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					},{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					},{
+						img:'../../static/icon/index-list/computer.jpg',
+						name:'电脑',
+						price:"￥3000"
+					}
+				],
+				active:true
 			}
 		},
-		onLoad() {
-
-		},
 		methods: {
-
+			change(e) {
+				this.current = e.detail.current;
+			}
 		}
 	}
 </script>
@@ -172,9 +194,16 @@
 	.bunner{
 		width: 616rpx;
 		height: 228rpx;
-		background-color: #000;
-		border-radius: 40rpx;
 		margin: 20rpx 0 ;
+		position: relative;
+	}
+	.bunner .bmg{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 616rpx;
+		height: 228rpx;
+		border-radius: 20rpx;
 	}
 	.nav{
 		width: 600rpx;
