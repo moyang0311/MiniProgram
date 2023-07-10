@@ -29,7 +29,7 @@
 				</li>
 			</ul>
 		</view>
-	</view>
+	
 		
 	</view>
 </template>
@@ -119,7 +119,7 @@
 		width: 70rpx;
 	}
 	.list-text{
-		width: 140rpx;
+		width: 200rpx;
 		height: 70rpx;
 		display: flex;
 		align-items: center;

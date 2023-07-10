@@ -1,0 +1,71 @@
+
+page{
+	background-color: aqua;
+}
+.top{
+	width: 100%;
+	height: 180rpx;
+	/* background-color: #000; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search{
+	width: 676rpx;
+	height: 88rpx;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	border-radius: 44rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.search input{
+	height: 88rpx;
+	/* background-color: #000; */
+	margin-left: 50rpx;
+}
+.search button{
+	width: 190rpx;
+	height: 88rpx;
+	background-color: #75fdc4;
+	border-radius: 0rpx 44rpx 44rpx 0 ;
+	margin-right: 0;
+	text-align: center;
+	line-height: 88rpx;
+}
+.content{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	border-radius: 64rpx 64rpx 0 0 ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.list{
+	width: 600rpx;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-around;
+	margin-top: 40rpx;
+}
+.list ._li{
+	width: 258rpx;
+	height: 272rpx;
+	border: 1rpx solid #bbb;
+	border-radius: 33rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20rpx;
+}
+.list ._li text:nth-child(3){
+	color: #0094FF;
+}
+

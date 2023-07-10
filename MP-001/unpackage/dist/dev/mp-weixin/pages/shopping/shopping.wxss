@@ -1,0 +1,86 @@
+
+page{
+	background-color: #d6d6d6;
+}
+.content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.totality{
+	color: #75F9FD;
+	font-size: 36rpx;
+}
+._ul{
+	width: 100%;
+	height: auto;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+._ul ._li{
+	width: 660rpx;
+	height: 340rpx;
+	background-color: #fff;
+	border: 1rpx solid #bbb;
+	border-radius: 40rpx;
+	margin-top: 50rpx;
+}
+.storechoes{
+	height: 100rpx;
+	width: 100%;
+	/* background-color: red; */
+	display: block;
+	line-height: 100rpx;
+}
+.img{
+	width: 212rpx;
+	height: 212rpx;
+	/* background-color: #000; */
+}
+.img ._img{
+	width: 100%;
+	height: 100%;
+	border-radius: 40rpx;
+}
+.deteli{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.count{
+	margin-left: 40rpx;
+}
+.footer{
+	width: 100%;
+	height: 112rpx;
+	background-color: #fff;
+	border: 1rpx solid #bbb;
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.total_price{
+	font-size: 36rpx;
+}
+.pay{
+	width: 162rpx;
+	height: 66rpx;
+	border: 1px solid #bbb;
+	background-color: #75F9FD;
+	border-radius: 33rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
