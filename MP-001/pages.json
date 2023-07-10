@@ -43,11 +43,10 @@
             }
             
         }
-                "enablePullDownRefresh": false
-            }
             
-        }
-    ],
+        ],   
+            
+
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
