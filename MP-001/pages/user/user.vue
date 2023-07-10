@@ -31,7 +31,6 @@
 				</li>
 			</ul>
 		</view>
-	<view>
 		
 	</view>
 </template>
