@@ -9,32 +9,11 @@
 			</view>
 		</view>
 		<view class="content">
-			<view class="bunner">
-				<uni-swiper-dot :info="info" :current="current" field="content" :mode="mode">
-					<swiper class="swiper-box" @change="change">
-						<swiper-item v-for="(item ,index) in bunner" :key="index">
-							<view class="swiper-item">
-								<img class="bmg" :src="item.bmg" alt="">
-							</view>
-						</swiper-item>
-					</swiper>
-				</uni-swiper-dot>
-
-			</view>
-			<ul class="nav">
-				<li v-for="(item,index) in nav" :key="index">
-					<img style="width: 48rpx;height: 48rpx;" :src="item.icon">
-					<text>{{item.msg}}</text>
-				</li>
-			</ul>
 			<ul class="list">
 				<li v-for="(item,index) in things":key="index">
-					
-					<navigator url="/pages/commodity-details/commodity-details">
-						<img style="width: 160rpx;height: 160rpx;" :src="item.img">
+					<img style="width: 160rpx;height: 160rpx;" :src="item.img">
 					<text>{{item.name}}</text>
 					<text>{{item.price}}</text>
-					</navigator>
 				</li>
 			</ul>
 		</view>
@@ -45,56 +24,6 @@
 	export default {
 		data() {
 			return {
-				bunner:[
-					{
-						bmg:"../../static/icon/index-bunner/001.jpg"
-					},
-					{
-						bmg:"../../static/icon/index-bunner/002.jpg"
-					},
-					{
-						bmg:"../../static/icon/index-bunner/003.jpg"
-					},
-					{
-						bmg:"../../static/icon/index-bunner/004.jpg"
-					},
-					{
-						bmg:"../../static/icon/index-bunner/005.jpg"
-					},
-				],
-				nav:[
-					{
-						icon:"../../static/icon/index-nav/clothes.png",
-						msg:"衣服"
-					},{
-						icon:"../../static/icon/index-nav/computer.png",
-						msg:"电脑"
-					},{
-						icon:"../../static/icon/index-nav/phone.png",
-						msg:"手机"
-					},{
-						icon:"../../static/icon/index-nav/pen.png",
-						msg:"文具"
-					},{
-						icon:"../../static/icon/index-nav/supermarket.png",
-						msg:"超市"
-					},{
-						icon:"../../static/icon/index-nav/bed.png",
-						msg:"家居"
-					},{
-						icon:"../../static/icon/index-nav/baby.png",
-						msg:"母婴"
-					},{
-						icon:"../../static/icon/index-nav/game.png",
-						msg:"游戏"
-					},{
-						icon:"../../static/icon/index-nav/sport.png",
-						msg:"运动"
-					},{
-						icon:"../../static/icon/index-nav/goodthing.png",
-						msg:"好物"
-					},
-				],
 				things:[
 					{
 						img:'../../static/icon/index-list/computer.jpg',
@@ -141,23 +70,14 @@
 			}
 		},
 		methods: {
-			change(e) {
-				this.current = e.detail.current;
-			}
+			
 		}
 	}
 </script>
 
 <style>
-	*{
-		margin: 0;
-		padding: 0;
-	}
 	page{
-		background-color: #75F9FD;
-	}
-	ul li {
-		list-style: none;
+		background-color: aqua;
 	}
 	.top{
 		width: 100%;
@@ -201,39 +121,6 @@
 		align-items: center;
 		justify-content: space-around;
 	}
-	.bunner{
-		width: 616rpx;
-		height: 228rpx;
-		margin: 20rpx 0 ;
-		position: relative;
-	}
-	.bunner .bmg{
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 616rpx;
-		height: 228rpx;
-		border-radius: 20rpx;
-	}
-	.nav{
-		width: 600rpx;
-		height: 212rpx;
-		/* background-color: #bbb; */
-		display: flex;
-		flex-wrap: wrap;
-		align-content: ;
-		align-items: center;
-		justify-content: space-around;
-	}
-	.nav li{
-		width: 120rpx;
-		height: 88rpx;
-		font-size: 28rpx;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
 	.list{
 		width: 600rpx;
 		height: auto;
@@ -242,8 +129,9 @@
 		flex-wrap: wrap;
 		align-content: space-around;
 		justify-content: space-around;
+		margin-top: 40rpx;
 	}
-	.list li navigator{
+	.list li{
 		width: 258rpx;
 		height: 272rpx;
 		border: 1rpx solid #bbb;

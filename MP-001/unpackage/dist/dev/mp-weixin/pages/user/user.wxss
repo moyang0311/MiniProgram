@@ -1,0 +1,62 @@
+
+page{
+	background-color:aquamarine;
+}
+.userbox{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.headshots{
+	margin: 0 auto;
+	padding-top: 55rpx;
+	width: 250rpx;
+	text-align: center;
+}
+.headshots image{
+	margin: 0 auto;
+	height: 200rpx;
+	width: 200rpx;
+	border: 1rpx solid black;
+	border-radius: 100rpx;
+}
+.list{
+	margin: 0 auto;
+	width: 520rpx;
+	background-color: white;
+	border-top-left-radius: 50rpx;
+	border-top-right-radius: 50rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.list ._ul {
+	height: 710rpx;
+	width: 440rpx;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.list ._ul ._li{
+	height: 150rpx;
+	width: 440rpx;
+	display: inline-flex;
+	margin-top: 40rpx;
+	justify-content: space-between;
+}
+.list ._ul ._li ._span{
+	text-align: center;
+}
+.list ._ul ._li ._span image{
+	height: 70rpx;
+	width: 70rpx;
+}
+.list-text{
+	width: 140rpx;
+	height: 70rpx;
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+

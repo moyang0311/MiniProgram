@@ -1,6 +1,6 @@
 
 page{
-	background-color: #75F9FD;
+	background-color: aqua;
 }
 .top{
 	width: 100%;
@@ -44,39 +44,6 @@ page{
 	align-items: center;
 	justify-content: space-around;
 }
-.bunner{
-	width: 616rpx;
-	height: 228rpx;
-	margin: 20rpx 0 ;
-	position: relative;
-}
-.bunner .bmg{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 616rpx;
-	height: 228rpx;
-	border-radius: 20rpx;
-}
-.nav{
-	width: 600rpx;
-	height: 212rpx;
-	/* background-color: #bbb; */
-	display: flex;
-	flex-wrap: wrap;
-	align-content: ;
-	align-items: center;
-	justify-content: space-around;
-}
-.nav ._li{
-	width: 120rpx;
-	height: 88rpx;
-	font-size: 28rpx;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
 .list{
 	width: 600rpx;
 	height: auto;
@@ -85,6 +52,7 @@ page{
 	flex-wrap: wrap;
 	align-content: space-around;
 	justify-content: space-around;
+	margin-top: 40rpx;
 }
 .list ._li{
 	width: 258rpx;

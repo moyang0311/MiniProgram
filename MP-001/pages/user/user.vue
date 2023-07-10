@@ -1,6 +1,7 @@
 <template>
 	<view class="userbox">
 		<view class="headshots">
+			<img src="../../static/icon/headshots.png">
 			<image src="../../static/icon/headshots.png"></image>
 			<p>
 				username
@@ -10,19 +11,16 @@
 			<ul>
 				<li>
 					<span>
-						<image src="../../static/icon/payment.png">
-							<p>待付款</p>
-						</image>
+						<img src="../../static/icon/payment.png">
+						<p>待付款</p>
 					</span>
 					<span>
-						<image src="../../static/icon/expressage.png">
-							<p>待收货</p>
-						</image>
+						<img src="../../static/icon/expressage.png">
+						<p>待收货</p>
 					</span>
 					<span>
-						<image src="../../static/icon/evaluate.png">
-							<p>评价</p>
-						</image>
+						<img src="../../static/icon/evaluate.png">
+						<p>评价</p>
 					</span>
 				</li>
 				<li v-for="(userData,index) in listData">
@@ -31,6 +29,7 @@
 				</li>
 			</ul>
 		</view>
+	
 		
 	</view>
 </template>
@@ -66,10 +65,11 @@
 		margin: 0;
 		padding: 0;
 	}
+	page{
+		background-color:aquamarine;
+	}
 	.userbox{
-		height: 100%;
 		width: 100%;
-		background-color: aquamarine;
 		display: flex;
 		flex-direction: column;
 	}
@@ -88,7 +88,6 @@
 	}
 	.list{
 		margin: 0 auto;
-		height: 840rpx;
 		width: 520rpx;
 		background-color: white;
 		border-top-left-radius: 50rpx;
