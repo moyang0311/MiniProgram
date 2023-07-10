@@ -3,9 +3,10 @@
 		<view class="top">
 			<view class="search">
 				<input type="text" placeholder="手机">
-				<button>搜索</button>
+				<navigator url="../search/search">
+					<button>搜索</button>
+				</navigator>
 			</view>
-			<!-- 测试提交 111111 -->
 		</view>
 		<view class="content">
 			<view class="bunner">
@@ -31,7 +32,6 @@
 					<img style="width: 160rpx;height: 160rpx;" :src="item.img">
 					<text>{{item.name}}</text>
 					<text>{{item.price}}</text>
-					<navigator url="../deteli/deteli.vue">跳转</navigator>
 				</li>
 			</ul>
 		</view>
@@ -165,7 +165,7 @@
 		border: 1px solid #bbb;
 		border-radius: 44rpx;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 	}
 	.search input{
